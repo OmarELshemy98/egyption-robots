@@ -18,6 +18,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     opacity: 0;
+    color: white
     transition: opacity 0.5s;
 }
 
@@ -254,10 +255,9 @@ body.loaded {
 }
 
 .robot-image {
-    width: 100%;
     height: auto;
     position: relative;
-    z-index: 2;
+    z-index: 999;
 }
 
 /* Decorative Elements */
@@ -364,24 +364,19 @@ body.loaded {
     background-color: #F2FF00;
     color: #000000;
     border: none;
-    padding: 0.875rem 1.875rem; /* 14px 30px */
+    padding: 0.875rem 1.875rem; 
     font-size: 24px;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
     cursor: pointer;
     position: relative;
-  
-    min-width: 10rem; /* 160px */
+    box-shadow: 20px -20px 20px 20px  rgba(0, 25, 75, 0.8);
     text-align:  center;
-    box-shadow: 0px 15px 40px rgba(0, 25, 75, 0.8); 
     transition: all 0.3s ease;
 }
 
 .register-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    background-color: #F2FF00;
-    box-shadow: 20px -70px 20px 20px rgba(242, 255, 0, 0.3);
 }
 
 .register-btn:active {
@@ -393,13 +388,15 @@ body.loaded {
 
 /* Hero Section Styles */
 .hero {
-    background: linear-gradient(135deg,
+    /* background: linear-gradient(135deg,
         #1B4168 0%,
         #1B4168 35%,
         #1E3A7B 50%,
         #2B2F8C 75%,
         #6A1B9A 100%
-    );
+    ); */
+    background: linear-gradient(to right, #1E88E5, #1E3A8A,#6B21A8, #1E40AF,  #6B21A8  );
+
     position: relative;
     overflow: hidden;
     min-height: 100vh;
@@ -429,17 +426,14 @@ body.loaded {
 }
 
 .hero-subtitle {
-    font-size: 1.125rem; /* 18px */
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 26px;
+    font-weight: 400;
     line-height: 1.6;
+    line-height: 32px;
     margin-bottom: 2.5rem; /* 40px */
-    .hero-subtitle {
     color: #fff; /* White text color */
-    font-size: 1.2rem; /* Adjust font size */
-    line-height: 1.5; /* Adjust line height for readability */
+
     margin-bottom: 20px; /* Space below the text */
-    text-align: center; /* Center align the text */
-    max-width: 600px; /* Limit the width for better readability */
     margin: 0 auto; /* Center the block horizontally */
 }
 
@@ -460,19 +454,12 @@ body.loaded {
 .plus-icon:hover {
     transform: rotate(45deg); /* Rotate the icon on hover */
 }
-}
+
 
 .hero-description {
-    background: linear-gradient(90deg, 
-        rgba(27, 65, 104, 0.95) 0%,
-        rgba(71, 84, 186, 0.95) 50%,
-        rgba(106, 27, 154, 0.95) 100%
-    );
-    padding: 2rem 2.5rem; /* 32px 40px */
-    border-radius: 0.5rem; /* 8px */
+    background: linear-gradient(to right, #1E88E5, #8E44AD);
+    padding: 2rem 2.5rem;
     position: relative;
-    overflow: hidden;
-    max-width: 75rem;
     margin: 0 auto;
 }
 
@@ -483,35 +470,19 @@ body.loaded {
     margin-bottom: 1.5rem; /* 24px */
     max-width: 90%;
 }
-
-.read-more-btn {
-    background-color: white;
-    color: #1B4168;
-    border: none;
-    padding: 0.75rem 2rem; /* 12px 32px */
-    border-radius: 0.25rem; /* 4px */
-    font-size: 0.875rem; /* 14px */
-    cursor: pointer;
-    position: relative;
-    left: 5rem; /* 80px */
-    font-weight: 500;
-}
-
-.read-more-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Pink accent line */
 .hero-description::after {
     content: '';
     position: absolute;
     right: 0;
-    top: 5rem; /* 80px */
-    width: 0.25rem; /* 4px */
+    top: 4rem;
+    width: 1rem;    
     height: 30%;
-    background-color: #FF1493;
+    background-color: rgba(255, 0, 187, 1);
 }
+
+
+
+/* Pink accent line */
 
 /* Robot Image */
 .hero-image {
@@ -710,6 +681,34 @@ body.loaded {
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s;
+    
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+.robotics-card{
+    background-image: url(images/robotics-card.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.rc-sports-card{
+    background-image: url(images/rc-sport-card.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ai-card{
+    background-image: url(images/artificial-card.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.manufacturing-card{
+    background-image: url(images/manufactring-card.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .activity-card:hover {
