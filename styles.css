@@ -75,7 +75,6 @@ body.loaded {
     left: 0;
     width: 100%;
     height: 0.1875rem; /* 3px */
-    background-color: #4CAF50;
 }
 
 .sort-up {
@@ -254,11 +253,6 @@ body.loaded {
     width: 25rem; /* 400px */
 }
 
-.robot-image {
-    height: auto;
-    position: relative;
-    z-index: 999;
-}
 
 /* Decorative Elements */
 .decorative-elements {
@@ -388,15 +382,8 @@ body.loaded {
 
 /* Hero Section Styles */
 .hero {
-    /* background: linear-gradient(135deg,
-        #1B4168 0%,
-        #1B4168 35%,
-        #1E3A7B 50%,
-        #2B2F8C 75%,
-        #6A1B9A 100%
-    ); */
+  
     background: linear-gradient(to right, #1E88E5, #1E3A8A,#6B21A8, #1E40AF,  #6B21A8  );
-
     position: relative;
     overflow: hidden;
     min-height: 100vh;
@@ -468,8 +455,8 @@ body.loaded {
     font-size: 1rem; /* 16px */
     line-height: 1.6;
     margin-bottom: 1.5rem; /* 24px */
-    max-width: 90%;
 }
+/* Pink accent line */
 .hero-description::after {
     content: '';
     position: absolute;
@@ -480,24 +467,18 @@ body.loaded {
     background-color: rgba(255, 0, 187, 1);
 }
 
-
-
-/* Pink accent line */
-
 /* Robot Image */
 .hero-image {
     position: absolute;
-    right: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 25rem; /* 400px */
-    height: auto;
+    left: 20%;
+    top: 10%;
+    width: 100%;    
 }
 
-.robot-img {
-    width: 100%;
+.robot-image {
     height: auto;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+    position: relative;
+    z-index: 999;
 }
 
 /* Decorative Elements */
@@ -538,66 +519,18 @@ body.loaded {
         width: 18.75rem; /* 300px */
     }
 }
-
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 3rem; /* 48px */
-    }
-    
-    .hero-image {
-        position: relative;
-        right: auto;
-        top: auto;
-        transform: none;
-        margin: 2.5rem auto; /* 40px */
-    }
-    
-    .hero-description {
-        padding: 1.5rem; /* 24px */
-        margin: 0 1rem; /* 16px */
-    }
-
-    .hero-description p {
-        max-width: 100%;
-    }
-}
-
-/* About Section */
-.about {
-    padding: 6rem 2rem; /* 96px 32px */
-    max-width: 75rem; /* 1200px */
-    margin: 0 auto;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2.5rem; /* 40px */
-    margin-bottom: 2rem; /* 32px */
-}
-
-.robot-image {
-    margin: 3rem 0; /* 48px */
-}
-
-.robot-image img {
-    max-width: 18.75rem; /* 300px */
-    height: auto;
-}
-
 /* Mission Section */
 .mission-section {
     padding: 2rem 0; /* 32px */
     background-color: #f8f9fa;
+   
 }
 
 .mission-container {
     max-width: 75rem; /* 1200px */
     margin: 0 auto;
-    background: linear-gradient(90deg, 
-        #00FFA3 0%, 
-        #00FFE5 30%, 
-        #00E5FF 60%
-    );
+ 
+    
     border-radius: 0.5rem; /* 8px */
     overflow: hidden;
     display: flex;
@@ -608,6 +541,10 @@ body.loaded {
 .mission-content {
     padding: 3rem; /* 48px */
     max-width: 31.25rem; /* 500px */
+    background-image: url(images/mission-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .mission-title {
@@ -742,39 +679,32 @@ body.loaded {
     text-align: center;
 }
 
-.membership img {
-    max-width: 18.75rem; /* 300px */
-    margin: 2rem 0; /* 32px */
-}
+
 
 /* Media Section */
 .media {
     padding: 6rem 2rem; /* 96px 32px */
-    max-width: 75rem; /* 1200px */
     margin: 0 auto;
+    background-color:rgba(10, 38, 65, 1);
 }
 
-.media-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr)); /* 300px */
-    gap: 2rem; /* 32px */
-}
-
-.media-card {
+.media-card-1 {
     position: relative;
-    overflow: hidden;
-    border-radius: 0.625rem; /* 10px */
+  
+    background-image: url(images/media-left.png );
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+ 
+}
+.media-card-2 {
+    background-image: url(images/media-rigth.png);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
 }
 
-.media-card img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s;
-}
 
-.media-card:hover img {
-    transform: scale(1.05);
-}
 
 /* Footer Styles */
 
