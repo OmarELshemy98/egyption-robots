@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Leaders Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-auth">
+            <a href="#" class="login-link">Login</a>
+            <span class="divider">|</span>
+            <a href="#" class="register-link">Register</a>
+            <span class="sort-up"><i class="fa-solid fa-sort-up fa-2xl" style="color: #2f4f43;"></i></span>
+            <a href="#" class="lang-link">العربية</a>
+        </div>
+        
+        <div class="nav-container mt-15">
+            <div class="nav-links">
+                <a href="#" class="nav-item active">Home</a>
+                <a href="#" class="nav-item">About the Union</a>
+                <a href="#" class="nav-item">Activities</a>
+            </div>
+            
+            <div class="logo">
+                <!-- <img src="images/logo.webp" alt="Logo" /> -->
+            </div>
+            
+            <div class="nav-links">
+                <a href="#" class="nav-item">Competitions</a>
+                <a href="#" class="nav-item">Subscription</a>
+                <a href="#" class="nav-item">News</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero ">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Empowering<br>
+                    Future Tech<br>
+                    Leaders
+                </h1>
+                <button class="register-btn" onclick="registerNow()">Register Now</button>
+
+                <div class="hero-subtitle">
+                    <p>
+                        Empowering the future with AI<br>
+                        and robotics education innovative learning for the<br>
+                        next generation of creators and thinkers
+                    </p>
+                    <div class="decorative-elements">
+                        <span class="plus-icon">+</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-description">
+                <p>In a time when the world is witnessing rapid developments in technology and an accelerating digital transformation, it has become essential to spread awareness of this technology and increase its significance across various sectors. Additionally, it is crucial to connect young people with these modern technologies.</p>
+                <button class="read-more-btn">Read more</button>
+            </div>
+        </div>
+        
+        <!-- Decorative Elements -->
+        <div class="hero-image">
+            <img src="path-to-robot-image.png" alt="Robot" class="robot-img">
+        </div>
+        <div class="decorative-elements">
+            <span class="plus-icon">+</span>
+            <span class="plus-icon">+</span>
+            <span class="plus-icon">+</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-us">
+        <div class="about-container">
+            <div class="about-image-wrapper >
+                <img src="images/about-us.png" alt="Robot" class="robot-image"  />
+                <div class="decorative-elements">
+                    <span class="shape pink"></span>
+                    <span class="shape blue"></span>
+                    <span class="shape yellow"></span>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 class="about-title">About us</h2>
+                <p class="about-text">
+                    The federation is a pioneering platform aimed at empowering youth in advanced technological fields such as Robotics, Artificial Intelligence, RC Sports, Unmanned Vehicle, and Programming. By organizing training events and technological and sports competitions, we strive to enhance youth skills and motivate them to excel and compete on a global level. We also focus on supporting digital transformation and strengthening Egypt's position as a regional hub for innovation, contributing to the realization of Egypt's Vision 2030 and driving sustainable development.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="mission-content">
+            <h2>Mission</h2>
+            <p>Under the supervision and patronage of the Ministry of Youth and Sports, and in collaboration with national and international institutions, the federation seeks to lead in developing a creative and innovative digital generation equipped with advanced skills and knowledge in fields such as robotics, artificial intelligence, RC sports, unmanned vehicles, and programming.</p>
+            <button class="read-more">Read More</button>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="activities" id="activities">
+        <h2>Main Activities</h2>
+        <p>The federation is a pioneering platform aimed at empowering youth in advanced technological fields such as Robotics, Artificial Intelligence, RC Sports, Unmanned Vehicle, and Programming. </p>
+        <div class="activities-grid">
+            <div class="activity-card">
+                <img src="robotics.png" alt="Robotics">
+                <h3>Robotics</h3>
+                <button>Read more</button>
+            </div>
+            <div class="activity-card">
+                <img src="rc-sports.png" alt="RC Sports">
+                <h3>RC Sports</h3>
+                <button>Read more</button>
+            </div>
+            <div class="activity-card">
+                <img src="ai.png" alt="Artificial Intelligence">
+                <h3>Artificial Intelligence</h3>
+                <button>Read more</button>
+            </div>
+            <div class="activity-card">
+                <img src="manufacturing.png" alt="Digital Manufacturing">
+                <h3>Digital Manufacturing</h3>
+                <button>Read more</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="benefits-container">
+            <div class="benefits-header">
+                <h2>Membership Benefits</h2>
+                <p>Discover the advantages of joining our tech community</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Access to Equipment</h3>
+                    <p>Use state-of-the-art robotics and AI equipment</p>
+                    <ul class="benefit-features">
+                        <li>Advanced Robotics Lab</li>
+                        <li>3D Printing Facilities</li>
+                        <li>Testing Environments</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Expert Training</h3>
+                    <p>Learn from industry professionals</p>
+                    <ul class="benefit-features">
+                        <li>Weekly Workshops</li>
+                        <li>Online Courses</li>
+                        <li>Mentorship Program</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Competitions</h3>
+                    <p>Participate in exclusive tech competitions</p>
+                    <ul class="benefit-features">
+                        <li>Regional Events</li>
+                        <li>International Contests</li>
+                        <li>Prize Pools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="membership" id="subscription">
+        <h2>Membership</h2>
+        <div class="membership-content">
+            <img src="credit-card.png" alt="Educational Account">
+            <h3>Individual Subscription</h3>
+            <p>Explanation of the benefits members receive (e.g., access to competitions, courses, workshops)</p>
+            <button class="join-now">JOIN NOW</button>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section class="media">
+        <h2>Media</h2>
+        <div class="media-grid">
+            <div class="media-card">
+                <img src="images/media-section1.png" alt="See Images">
+                <button>See Images</button>
+            </div>
+            <div class="media-card">
+                <img src="images/media-section2.png" alt="See Videos">
+                <button>See Videos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Top white line -->
+        <div class="footer-line"></div>
+        
+        <!-- Footer content -->
+        <div class="footer-content">
+            <!-- Column 1 -->
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About the Union</a></li>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">Competitions</a></li>
+                    <li><a href="#">Subscription</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-column-2">
+                <ul class="gap-15">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Rules & Regulations</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 - Contact Form -->
+            <div class="footer-column">
+                <p>Send To Us:</p>
+                <div class="contact-form">
+                    <input type="text" class="py-2" placeholder="Enter Subject">
+                    <input type="text" class="py-5" input-message" placeholder="Enter Message">
+                    <button type="submit">Send</button>
+                </div>
+            </div>
+
+            <!-- Column 4 - Social Media -->
+            <div class="social-media-section">
+                <h3 class="social-title">Our Social Media</h3>
+                <div class="social-content flex items-center justify-between my-2">
+                    <div class="social-icons">
+                        <a href="#" class="social-box">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </a>
+                        <a href="#" class="social-box">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                        <a href="#" class="social-box-whatsapp">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                        <div class="social-button">
+                            <button class="join-team-btn px-10 py-1 text-nowrap">Join our Team</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright my-8 flex justify-end">
+            Copyright© 2025 Egyptian robotics & RC Sports Federation. All rights Reserved
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
