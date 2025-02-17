@@ -18,8 +18,8 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     opacity: 0;
-    color: white
-    transition: opacity 0.5s;
+    color:white;
+    
 }
 
 body.loaded {
@@ -681,28 +681,6 @@ body.loaded {
 
 
 
-/* Media Section */
-.media {
-    padding: 6rem 2rem; /* 96px 32px */
-    margin: 0 auto;
-    background-color:rgba(10, 38, 65, 1);
-}
-
-.media-card-1 {
-    position: relative;
-  
-    background-image: url(images/media-left.png );
-    background-size: cover;
-    /* background-position: center; */
-    background-repeat: no-repeat;
- 
-}
-.media-card-2 {
-    background-image: url(images/media-rigth.png);
-    background-size: cover;
-    /* background-position: center; */
-    background-repeat: no-repeat;
-}
 
 
 
